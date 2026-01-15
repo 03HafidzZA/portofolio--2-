@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 2px;
+        }
+        
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(234, 88, 12, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(234, 88, 12, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .metal-gradient {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #1f2937 100%);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(234, 88, 12, 0.3);
+        }
+
+        .diagonal-line {
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(234, 88, 12, 0.1) 10px,
+                rgba(234, 88, 12, 0.1) 20px
+            );
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-b border-orange-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="heading-font text-3xl text-orange-600">HAFIDZ</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-orange-600 transition">HOME</a>
+                    <a href="#about" class="text-gray-300 hover:text-orange-600 transition">ABOUT</a>
+                    <a href="#projects" class="text-gray-300 hover:text-orange-600 transition">PROJECTS</a>
+                    <a href="#contact" class="text-gray-300 hover:text-orange-600 transition">CONTACT</a>
+                </div>
+                <button class="md:hidden text-orange-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center grid-pattern">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="text-orange-600 text-sm font-bold mb-4 tracking-widest">WEB DEVELOPER & DESIGNER</div>
+                    <h1 class="heading-font text-6xl md:text-8xl mb-6 text-white">
+                        CRAFTING<br/>
+                        <span class="text-orange-600">DIGITAL</span><br/>
+                        <span class="text-orange-600">EXPERIENCES</span>
+                    </h1>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        Spesialisasi dalam pembuatan website portofolio yang modern, responsif, dan user-friendly dengan desain industrial yang kuat dan profesional.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#projects" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 font-bold transition">
+                            LIHAT PROJECT
+                        </a>
+                        <a href="#contact" class="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-3 font-bold transition">
+                            CONTACT ME
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="metal-gradient p-8 border-l-4 border-orange-600 diagonal-line">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="heading-font text-5xl text-orange-600">80+</div>
+                                <div class="text-gray-400 text-sm mt-2">PROJECTS</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="heading-font text-5xl text-orange-600">5+</div>
+                                <div class="text-gray-400 text-sm mt-2">YEARS EXP</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="heading-font text-5xl text-orange-600">98%</div>
+                                <div class="text-gray-400 text-sm mt-2">SATISFIED</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="heading-font text-5xl text-orange-600">30+</div>
+                                <div class="text-gray-400 text-sm mt-2">CLIENTS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="text-orange-600 text-sm font-bold mb-4 tracking-widest">TENTANG SAYA</div>
+                    <h2 class="heading-font text-5xl mb-6 text-white">PRECISION & INNOVATION</h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Dengan passion dalam web development dan desain UI/UX, saya menciptakan website portofolio yang tidak hanya menarik secara visual, tetapi juga fungsional dan optimized untuk performa terbaik.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Setiap project dikerjakan dengan detail yang cermat, menggunakan teknologi terkini dan best practices untuk memastikan website yang fast, responsive, dan memorable.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-orange-600 mr-4"></div>
+                            <span class="text-gray-300">HTML, CSS & JavaScript Expert</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-orange-600 mr-4"></div>
+                            <span class="text-gray-300">Responsive Web Design</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-orange-600 mr-4"></div>
+                            <span class="text-gray-300">UI/UX Design Specialist</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-orange-600 mr-4"></div>
+                            <span class="text-gray-300">Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square border-4 border-orange-600 overflow-hidden">
+       <img src="https://i.imgur.com/zWN2Gsh.jpeg" alt="Hafidz" class="w-full h-full object-cover">
+   </div>
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 border-4 border-orange-600 -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="text-orange-600 text-sm font-bold mb-4 tracking-widest">PORTFOLIO</div>
+                <h2 class="heading-font text-5xl text-white">FEATURED PROJECTS</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="metal-gradient hover-lift cursor-pointer overflow-hidden border border-gray-700">
+                    <div class="h-64 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
+                        <div class="heading-font text-6xl text-orange-600 opacity-20">01</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-3 text-white">PORTFOLIO WEBSITE</h3>
+                        <p class="text-gray-400 text-sm mb-4">Website portofolio personal dengan tema industrial modern dan animasi interaktif.</p>
+                        <div class="flex gap-2 text-xs text-orange-600">
+                            <span class="border border-orange-600 px-3 py-1">HTML</span>
+                            <span class="border border-orange-600 px-3 py-1">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="metal-gradient hover-lift cursor-pointer overflow-hidden border border-gray-700">
+                    <div class="h-64 bg-gradient-to-br from-orange-900 to-gray-800 flex items-center justify-center">
+                        <div class="heading-font text-6xl text-orange-600 opacity-20">02</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-3 text-white">LANDING PAGE</h3>
+                        <p class="text-gray-400 text-sm mb-4">Landing page bisnis dengan desain minimalis dan fokus pada conversion rate optimization.</p>
+                        <div class="flex gap-2 text-xs text-orange-600">
+                            <span class="border border-orange-600 px-3 py-1">TAILWIND</span>
+                            <span class="border border-orange-600 px-3 py-1">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="metal-gradient hover-lift cursor-pointer overflow-hidden border border-gray-700">
+                    <div class="h-64 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+                        <div class="heading-font text-6xl text-orange-600 opacity-20">03</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-3 text-white">RESPONSIVE DESIGN</h3>
+                        <p class="text-gray-400 text-sm mb-4">Website multi-halaman dengan desain responsive yang optimal di semua device.</p>
+                        <div class="flex gap-2 text-xs text-orange-600">
+                            <span class="border border-orange-600 px-3 py-1">RESPONSIVE</span>
+                            <span class="border border-orange-600 px-3 py-1">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-800 diagonal-line">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="text-orange-600 text-sm font-bold mb-4 tracking-widest">GET IN TOUCH</div>
+            <h2 class="heading-font text-5xl mb-6 text-white">LET'S BUILD SOMETHING GREAT</h2>
+            <p class="text-gray-400 mb-12 text-lg">
+                Siap untuk membuat website portofolio Anda? Mari diskusikan project Anda!
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="metal-gradient p-6 border-t-4 border-orange-600">
+                    <div class="text-orange-600 mb-3 heading-font text-xl">EMAIL</div>
+                    <div class="text-gray-300 text-sm">hafidz@portfolio.com</div>
+                </div>
+                <div class="metal-gradient p-6 border-t-4 border-orange-600">
+                    <div class="text-orange-600 mb-3 heading-font text-xl">PHONE</div>
+                    <div class="text-gray-300 text-sm">+62 812-3456-7890</div>
+                </div>
+                <div class="metal-gradient p-6 border-t-4 border-orange-600">
+                    <div class="text-orange-600 mb-3 heading-font text-xl">LOCATION</div>
+                    <div class="text-gray-300 text-sm">Malang, Indonesia</div>
+                </div>
+            </div>
+            
+            <a href="mailto:hafidz@portfolio.com" class="inline-block bg-orange-600 hover:bg-orange-700 text-white px-12 py-4 font-bold text-lg transition">
+                SEND MESSAGE
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-orange-600 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="heading-font text-2xl text-orange-600 mb-4">HAFIDZ</div>
+            <p class="text-gray-500 text-sm">© 2024 Hafidz Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
